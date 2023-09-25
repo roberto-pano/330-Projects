@@ -1,7 +1,7 @@
 # CSE330
-Roberto Panora 490453 roberto-pano
+Roberto Panora roberto-pano
 
-Fred Hua 498534 fredhua233
+Fred Hua fredhua233
 
 Link to Login Page:
 http://ec2-50-16-177-186.compute-1.amazonaws.com/~roberto/module2_group/login.html
