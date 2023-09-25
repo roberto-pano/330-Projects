@@ -1,0 +1,22 @@
+body{
+    background-color: orange;
+
+}
+
+p.birthdaywords{
+    color: lightblue;
+    text-shadow: 5px 5px 1px darkblue;
+    text-align: center;
+    font-size: 45px;
+}
+
+
+img.balloon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 100px;
+    height: 100px;
+}
