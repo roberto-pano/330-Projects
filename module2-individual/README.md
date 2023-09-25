@@ -1,5 +1,5 @@
 # CSE330
-Roberto Panora 490453 roberto-pano
+Roberto Panora
 
 
 Link to Calculator(also my test for Apache Dir):
