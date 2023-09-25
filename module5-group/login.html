@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calendar</title>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" >
+</head>
+<body>
+    <div id="login_form">
+    <input type="text" id="username" placeholder="Username" >
+    <input type="password" id="password" placeholder="Password" >
+    <button id="login_btn">Log In</button>
+    </div>
+
+    <div id="register_form">
+    <input type="text" id="new_user" placeholder="Username" >
+    <input type="password" id="new_pass" placeholder="Password">
+    <button id="register_btn">Register</button>
+    </div>
+
+    <div id="share_form">
+      <input type="text" id="share_user" placeholder="Username" >
+      <button id="share_btn">Share Calendar with other user</button>
+      </div>
+
+    <div id="logout_form">
+      <button id="logout_btn">Logout</button>
+      </div>
+
+    <div id="event_form">
+      <input type="text" id="event_name" placeholder="Event Name">
+      <input type="date" id="date" >
+      <input type="time" id = "event_time">
+      <input type="hidden" id="token" />
+      <button id="event_btn">Create Event</button>
+      </div>
+
+      <div id="delete_form">
+        <input type="number" id = "delete_event_id" min = "1" step = "1" >
+        <button id="delete_btn">Delete Event By Entering It's Event ID</button>
+      </div>
+        <div id="edit_form">
+          <input type="number" id = "edit_event_id" min = "1" >
+          <input type="text" id="new_name" placeholder="Event Name" >
+          <input type="date" id="new_date" >
+          <input type="time" id = "new_event_time" min = "00:00" max = "23:59">
+          <button id="edit_btn">Edit Event</button>
+        </div>
+    <div id="clock"></div>
+    <div class = "page">
+      <div class = "calendar">
+        <div class = "month">
+          <div class="prev_month">&lt;</div>
+          <div class = "date">
+            <h1></h1>
+          </div>
+          <div class = "next_month">&gt;</div>
+          </div>
+            <div class="day_names"> 
+              <div>Sunday</div>
+              <div>Monday</div>
+              <div>Tuesday</div>
+              <div>Wednesday</div>
+              <div>Thursday</div>
+              <div>Friday</div>
+              <div>Saturday</div>
+            </div>
+            <div class = "num_days">
+            </div>
+        </div>
+        <br>
+      <div class = 'result' id = "result"></div>
+    </div>
+    <script>
+      function Time() {
+        const today = new Date();
+        let h = today.getHours();
+        let m = today.getMinutes();
+        let s = today.getSeconds();
+        let date = today.getDate();
+        let month = today.getMonth() + 1;
+        let year = today.getFullYear();
+        m = checkTime(m);
+        s = checkTime(s);
+        document.getElementById("clock").innerHTML = 'Current Time is: ' + month + '/' + date + '/' + year + ' ' + h + ":" + m + ":" + s;
+        setTimeout(startTime, 1000);
+      }
+      
+      function checkTime(i) {
+        if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+        return i;
+      }
+      </script>
+      <script src="calender.js"></script>
+</body>
+</html>
