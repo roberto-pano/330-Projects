@@ -1,0 +1,7 @@
+ariaDB [wustl]> select first_name, last_name, student_id, email_address, avg(grade) as avg_grades from grades join students on (grades.student_id = students.id) group by student_id having first_name = 'Jack'AND last_name = 'Johnson'\g
++------------+-----------+------------+------------------------------+------------+
+| first_name | last_name | student_id | email_address                | avg_grades |
++------------+-----------+------------+------------------------------+------------+
+| Jack       | Johnson   |        257 | jjmuzak@brushfirerecords.com |  96.125000 |
++------------+-----------+------------+------------------------------+------------+
+1 row in set (0.00 sec)
