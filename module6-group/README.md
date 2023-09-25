@@ -3,7 +3,7 @@ Roberto Panora roberto-pano
 
 Fred Hua fredhua233
 
-NOTE: Sometimes after long use it may become slow and seemingly not work, just restart node and functionality will continue TAs: Tony Tong and David Buckley said this note was beneficial
+NOTE: Sometimes after long use it may become slow and seemingly not work, just restart node and functionality will continue 
 
 
 Creative Portion:
