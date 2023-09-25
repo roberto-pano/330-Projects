@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head><title>Calculator</title></head>
+<body>
+<form method="get" action="calculator.php">
+       <p>
+        <input type="number" name = "firstnumber" step = "any">
+        <input type="number" name = "secondnumber" step = "any">
+       </p>
+        <p>
+            <input type="radio" name = "operation" value = "+"
+            id = "add"  /> <label for="add">+</label>
+            <input type="radio" name = "operation" value= "-"
+            id = "subtract" /> <label>-</label>
+            <input type="radio" name = "operation" value = "*"
+            id = "multiply" /> <label>*</label>
+            <input type = "radio" name = "operation" value = "/"
+            id = "divide" /> <label>/</label>
+        </p>
+        <p>
+            <input type="submit" value = "Calculate Operation" />
+            <input type="reset" />
+        </p>
+</form>
+</body>
