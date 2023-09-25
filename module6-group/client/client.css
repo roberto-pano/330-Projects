@@ -1,0 +1,14 @@
+.chatter_list div{
+    /* position: relative; */
+    margin-right: auto;
+}
+.enter_password input{
+    position: relative;
+    float: right;
+    top: -2px;
+}
+.sign_in button{
+    position: relative;
+    float: right;
+    top: -5px;
+}

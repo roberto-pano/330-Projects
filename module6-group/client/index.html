@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+   <head>
+      <title>Chat Room</title>
+      <link rel="stylesheet" href="client.css">
+   </head>
+   <body>
+      <input type="text" id = "display_name">
+      <button id = "display_enter">Enter Display Name</button>
+      <input type="text" id = "new_server_name" placeholder="Room Name">
+      <input type="text" id = "password" placeholder="Create Password">
+      <button id = "create_server">Create Room w/ Optional Password (leave blank if you do not want one)</button>
+      <input type="text" id="message_input" placeholder="Enter Message">
+      <button id = "message_enter">send</button>
+      <input type="text" id = "new_password" placeholder="New Room Password">
+      <button id = "new_password_enter">Change Password</button>
+      <div id = "private_message" class="private_message">
+         <input type="text" id = "priv" class="private_message" placeholder="Private Message">
+         <button id = "send_priv" class="private_message"> Send PM</button>
+         <button id = "close_priv" class="private_message">Close PM</button>
+      </div>
+      <div id = "removal_services" class="remove">
+         <button id = "kick" class="remove">Kick</button>
+         <button id = "ban" class="remove">Ban</button>
+         <button id = "close_removal" class="remove">Close</button>
+         <button id = "give_ownership" class="remove">Give Ownership</button>
+      </div>
+      
+      <input type="text" id = "enter_password" placeholder="Enter Room Password">
+      <button id = "sign_in">Sign In</button>
+      <button id = "leave_room">Leave Room</button>
+      <div id = "server_list" class = "server_list"></div>
+      <div id = "chatter_list" class = "chatter_list"></div>
+      <div id="chatlog" class = "chatlog"></div>
+      <div id = "ban_msg"></div>
+
+      
+
+
+      <script src="/socket.io/socket.io.js"></script>
+      <script src = "client.js"></script>
+   </body>
+</html>

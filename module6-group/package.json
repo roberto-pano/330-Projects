@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "mime": "~2.4.6",
+    "socket.io": "~1.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

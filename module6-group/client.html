@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link rel="stylesheet" href="/client/client.css">
+   </head>
+   <body>
+      <input type="text" id = "display_name"/>
+      <button id = "display_enter">Enter Display Name</button>
+      <input type="text" id="message_input"/>
+      <button id = "message_enter">send</button>
+      <input type="text" id = "new_server_name">
+      <input type="text" id = "password">
+      <button id = "create_server">Create Room w/ Optional Password (leave blank if you do not want one)</button>
+      <button id = "leave_room">Leave Room</button>
+      <div id = "server_list" class = "server_list"></div>
+      <div id = "chatter_list" class = "chatter_list"></div>
+      <div id="chatlog" class = "chatlog"></div>
+
+      
+
+
+      <script src="/socket.io/socket.io.js"></script>
+      <script src = "/client/client.js"></script>
+   </body>
+</html>
